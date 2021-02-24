@@ -30,15 +30,20 @@
             document.getElementById("preview").innerHTML = marked(text);
         }
     </script>
+    <style>
+
+    </style>
 </head>
 <body style="background-color: antiquewhite;">
     <div class="container" >
         <div class="row my-5">
-            <div class="col my-3">
-                <textarea class="form-control h-100" id="editor" cols="30" rows="10" oninput="getText()"></textarea>
+            <div class="col my-3 pb-5">
+                <h2 style="text-align: center; color: cadetblue;">Editor</h2>
+                <textarea class="form-control h-100" id="editor" style="background-color: rgba(95, 158, 160, 0.05);" cols="30" rows="10" oninput="getText()"></textarea>
             </div>
-            <div class="col my-3 border border-dark rounded">
-                <span class="" id="preview"></span>
+            <div class="col my-3">
+                <h2 style="text-align: center; color: cornflowerblue;">Preview</h2>
+                <div class="pl-2" id="preview" style="background-color: rgba(100, 149, 237, 0.05); border: 1px solid cornflowerblue; border-radius: 5px;"></span>
             </div>
         </div>
     </div>
